@@ -1,6 +1,8 @@
 import path from 'path';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-export default {
+export default defineConfig({
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, 'src'), // Alias para la carpeta src
@@ -44,4 +46,8 @@ export default {
 			],
 		},
 	},
-};
+	plugins: [react()],
+	server: {
+		port: 3000,
+	},
+});
