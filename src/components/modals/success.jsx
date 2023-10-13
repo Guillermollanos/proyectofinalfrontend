@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Success({ message, route }) {
+export default function Success(message, route) {
 	console.log('soy el msj', message);
 	return (
 		<div className='fixed inset-0 flex items-center justify-center z-50'>

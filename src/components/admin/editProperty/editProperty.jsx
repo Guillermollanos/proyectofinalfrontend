@@ -8,9 +8,12 @@ import { Formik, Field, Form, ErrorMessage, FieldArray } from 'formik';
 import { editProperty } from '../../../redux/actions';
 import Dropzone from 'react-dropzone';
 import Switch from 'react-switch';
-import Success from '../../modals/Success';
+//import Success from '../../modals/Success';
+//import ModalError from '../../modals/ModalError';
+//import Loading from '../../modals/loading';
+import Success from '../../modals/Success'; // Corregida la ruta de importación
 import ModalError from '../../modals/ModalError';
-import Loading from '../../modals/loading';
+import Loading from '../../modals/Loading';
 
 export function EditPropertyFromAdmin() {
 	const dispatch = useDispatch();
